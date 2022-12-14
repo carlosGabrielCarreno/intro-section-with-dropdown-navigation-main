@@ -1,10 +1,10 @@
-import './_navbar.scss';
-import logo from '../../images/logo.svg';
-import menu from '../../images/icon-menu.svg';
 import { useState } from 'react';
+import { BurguerButton } from '../BurguerButton';
+import logo from '../../images/logo.svg';
+import './_navbar.scss';
 
 export const Navbar = () => {
-  const [menuStatus, setMenuStatus] = useState(true);
+  const [menuStatus, setMenuStatus] = useState(false);
 
   const handleActiveBtn = () => {
     setMenuStatus(!menuStatus);
@@ -14,30 +14,25 @@ export const Navbar = () => {
     <header className="container">
       <img src={logo} alt="logo mark" />
 
-      <div className="container-menu">
-        <img
-          className={`menu-item ${menuStatus ? 'active' : ''}`}
-          src={menu}
-          alt="menu"
-          onClick={handleActiveBtn}
-        />
-        <div id="back_menu"></div>
-        <nav className="nav">
-          <ul>
-            <select className="select-feacture" name="" id="">
-              Feactures
-            </select>
-            <select className="select-company" name="" id="">
-              Company
-            </select>
-            <p className="carrers">Carrers</p>
-            <p className="about">About</p>
-            <p className="mode">Mode</p>
-            <button className="login">Login</button>
-            <button className="register">Register</button>
-          </ul>
-        </nav>
+      <nav className={`links ${menuStatus ? 'active' : ''}`}>
+        <ul>
+          <select className="select-feacture">
+            <option value="Feactures">Feactures</option>
+          </select>
+          <select className="select-company">
+            <option value="Company">Company</option>
+          </select>
+          <a className="carrers">Carrers</a>
+          <a className="about">About</a>
+          <button className="mode">Mode</button>
+          <button className="login">Login</button>
+          <button className="register">Register</button>
+        </ul>
+      </nav>
+      <div className="burguer">
+        <BurguerButton clicked={menuStatus} handleActiveBtn={handleActiveBtn} />
       </div>
+      <div className={`initial ${menuStatus ? ' active' : ''}`}></div>
     </header>
   );
 };
