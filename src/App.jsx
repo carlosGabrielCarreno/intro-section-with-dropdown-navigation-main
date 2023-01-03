@@ -1,10 +1,15 @@
+import { Footer, Main, Navbar, Sidebar } from './components';
 import './app.scss';
-import { Navbar } from './components';
 
 function App() {
   return (
     <div className="app">
       <Navbar />
+      <div className="grid-container">
+        <Sidebar />
+        <Main />
+        <Footer />
+      </div>
     </div>
   );
 }

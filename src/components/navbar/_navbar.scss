@@ -1,10 +1,11 @@
 .container {
   /* border: solid red; */
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  height: 100px;
   & img {
     width: 80px;
   }
-  padding: 0.4rem;
   /* background-color: #fff; */
   display: flex;
   align-items: center;
