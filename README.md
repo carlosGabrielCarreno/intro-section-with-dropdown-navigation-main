@@ -1,6 +1,6 @@
 # Frontend Mentor - Intro section with dropdown navigation
 
-# [visit site](https://gabrielcarrenio.github.io/intro-section-with-dropdown-navigation-main)
+# [visit site](https://carlosGabrielCarreno.github.io/intro-section-with-dropdown-navigation-main)
 
 ![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
 
