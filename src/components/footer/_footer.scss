@@ -2,4 +2,10 @@
   grid-area: footer;
   /* border: solid indianred; */
   height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (min-width: 800px) {
+  }
 }

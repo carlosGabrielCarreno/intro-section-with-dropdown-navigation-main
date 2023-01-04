@@ -1,14 +1,15 @@
 .sidebar {
   grid-area: sidebar;
+  /* border: solid red; */
   width: 100%;
-  border: solid red;
-  background-image: url(../../images/image-hero-mobile.png);
-  object-fit: contain;
-  background-size: cover;
+  height: 100%;
 
-  /* max-width: 38.75rem; */
-  min-width: 300px;
-  @media (min-width: 600px) {
+  background-image: url(../../images/image-hero-mobile.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: 800px) {
     background-image: url(../../images/image-hero-desktop.png);
   }
 }

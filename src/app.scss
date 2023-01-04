@@ -3,14 +3,14 @@
   max-width: 75%;
   margin: 0 auto;
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   grid-template:
     'sidebar' 300px
     'main' auto
     'footer' auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .grid-container {
     grid-template:
       'main sidebar' auto
@@ -20,12 +20,12 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .grid-container {
     grid-template:
       'main sidebar sidebar' auto
       'main sidebar sidebar' auto
       'footer sidebar sidebar' 100px /
-      400px auto auto;
+      350px auto auto;
   }
 }
