@@ -1,0 +1,18 @@
+.container-selected-features {
+  //margin-right: 1rem;
+  //border: solid fuchsia;
+}
+
+.select-no-outline:focus {
+  outline: none;
+}
+
+.item-features {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & .label {
+    font-size: 12px;
+  }
+}

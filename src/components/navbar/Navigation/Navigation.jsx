@@ -1,17 +1,13 @@
-import todoList from "../../../images/icon-todo.svg";
-import calendar from "../../../images/icon-calendar.svg";
-import reminders from "../../../images/icon-reminders.svg";
-import planning from "../../../images/icon-planning.svg";
+import { CompanySelected } from "../CompanySelected/CompanySelected";
+import { SelectFeature } from "../SelectFeature/SelectFeature";
 import "../_navbar.scss";
 
 export const Navigation = ({ nameClass }) => {
   return (
     <nav className={nameClass}>
       <ul>
-        <div className="calendar">Calendar</div>
-        <div className="reminders">Reminders</div>
-        <div className="planning">Planning</div>
-        <div className="company">Company</div>
+        <SelectFeature />
+        <CompanySelected />
         <div className="carrers">Carrers</div>
         <div className="about">About</div>
         <div className="container-buttons">
