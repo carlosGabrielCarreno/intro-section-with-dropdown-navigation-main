@@ -5,17 +5,17 @@
   display: grid;
   gap: 3rem;
   grid-template:
-    'sidebar' 300px
-    'main' auto
-    'footer' auto;
+    "sidebar" 300px
+    "main" auto
+    "footer" auto;
 }
 
 @media (min-width: 800px) {
   .grid-container {
     grid-template:
-      'main sidebar' auto
-      'main sidebar' auto
-      'footer sidebar' 100px /
+      "main sidebar" auto
+      "main sidebar" auto
+      "footer sidebar" 100px /
       200px auto;
   }
 }
@@ -23,9 +23,9 @@
 @media (min-width: 1000px) {
   .grid-container {
     grid-template:
-      'main sidebar sidebar' auto
-      'main sidebar sidebar' auto
-      'footer sidebar sidebar' 100px /
+      "main sidebar sidebar" auto
+      "main sidebar sidebar" auto
+      "footer sidebar sidebar" 100px /
       350px auto auto;
   }
 }

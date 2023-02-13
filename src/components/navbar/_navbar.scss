@@ -2,6 +2,8 @@
   width: 100%;
   height: 70px;
   transition: all 0.5s ease;
+  //border: solid red;
+  margin: 1rem 0;
 }
 
 .wrapper {
@@ -93,17 +95,17 @@
 }
 
 .login {
-  border-radius: 5px;
+  border-radius: 1rem;
+
   padding: 10px;
-  /* margin: 1rem 0; */
   font-weight: 600;
   background-color: #fff;
-  color: #000;
+  color: hsl(0, 0%, 41%);
   border: transparent;
   cursor: pointer;
   transition: all 0.3s ease-in;
   &:hover {
-    color: hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 8%);
     //Almost White: hsl(0, 0%, 98%)
     //Medium Gray: hsl(0, 0%, 41%)
     //Almost Black: hsl(0, 0%, 8%)
@@ -113,18 +115,19 @@
   }
 }
 .register {
-  border-radius: 5px;
+  border-radius: 1rem;
+
   padding: 10px;
   /* margin: 1rem 0; */
   font-weight: 600;
   background-color: #fff;
-  color: #000;
-  border: 1px solid #000;
   cursor: pointer;
   transition: all 0.3s ease-in;
+  color: hsl(0, 0%, 41%);
+  border: 1px solid hsl(0, 0%, 41%);
   &:hover {
-    color: hsl(0, 0%, 41%);
-    border: 1px solid hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
   }
   @media screen and (min-width: 960px) {
     margin-left: 10px;
