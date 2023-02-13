@@ -1,6 +1,10 @@
-.container-selected-features {
+select .container-selected-features {
   //margin-right: 1rem;
-  //border: solid fuchsia;
+  border: solid fuchsia;
+  &:hover {
+    border-color: transparent;
+    cursor: pointer;
+  }
 }
 
 .select-no-outline:focus {

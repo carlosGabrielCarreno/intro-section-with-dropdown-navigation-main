@@ -4,9 +4,10 @@ html {
 
 html,
 body {
+  transition: all 0.5s ease;
   font-family: var(--font-Epilogue);
   min-height: 100%;
-  font-size: 18px;
+  font-size: 15px;
   background-color: var(--neutral-Almost-White);
   color: var(--neutral-Almost-Black);
 }
