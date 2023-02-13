@@ -1,14 +1,13 @@
-select .container-selected-features {
-  //margin-right: 1rem;
-  border: solid fuchsia;
-  &:hover {
-    border-color: transparent;
-    cursor: pointer;
-  }
+#feature-select .select__control {
+  border: none !important;
+  box-shadow: none !important;
+  border-color: #000;
 }
 
-.select-no-outline:focus {
-  outline: none;
+#feature-select .select__control:hover {
+  border: none !important;
+  box-shadow: none !important;
+  border-color: #000;
 }
 
 .item-features {

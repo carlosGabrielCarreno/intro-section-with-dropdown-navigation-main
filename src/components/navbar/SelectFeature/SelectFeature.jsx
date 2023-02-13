@@ -15,6 +15,7 @@ const options = [
 
 export const SelectFeature = () => (
   <Select
+    id="feature-select"
     className="container-selected-features select-no-outline"
     options={options}
     placeholder="Features"

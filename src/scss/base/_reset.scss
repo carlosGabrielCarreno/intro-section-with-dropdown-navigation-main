@@ -166,7 +166,6 @@ img {
 button,
 input,
 optgroup,
-select,
 textarea {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
@@ -190,8 +189,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button,
-select {
+button {
   /* 1 */
   text-transform: none;
 }
