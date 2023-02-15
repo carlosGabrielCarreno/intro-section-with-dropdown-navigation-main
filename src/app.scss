@@ -1,3 +1,11 @@
+.app {
+  &.open {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  //border: solid red;
+  height: 105vh;
+}
+
 .grid-container {
   /* border: solid purple; */
   max-width: 75%;

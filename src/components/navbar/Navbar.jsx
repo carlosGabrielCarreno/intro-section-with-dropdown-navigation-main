@@ -1,32 +1,22 @@
 //C:\Program Files\PostgreSQL\15
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import logo from "../../images/logo.svg";
 import "./_navbar.scss";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Navigation } from "./Navigation/Navigation";
+import { DropdownContext } from "../../Context/DropdownContext";
+import { getOpenClass } from "../../utils/getOpenClass";
 
 export const Navbar = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const { showMobileMenu, setShowMobileMenu, windowSize } =
+    useContext(DropdownContext);
   return (
-    <header className="container">
+    <header
+      id="header"
+      className={`container-header ${getOpenClass(
+        showMobileMenu && windowSize.width < 960
+      )}`}
+    >
       <div className="wrapper">
         <img src={logo} className="logotipo" alt="logo mark" />
         {windowSize.width > 960 ? (
@@ -43,9 +33,9 @@ export const Navbar = () => {
       </div>
       {showMobileMenu ? (
         <Navigation
-          nameClass={`links ${
-            showMobileMenu && windowSize.width < 960 ? "open" : ""
-          }`}
+          nameClass={`links ${getOpenClass(
+            showMobileMenu && windowSize.width < 960
+          )}`}
         />
       ) : (
         <></>
