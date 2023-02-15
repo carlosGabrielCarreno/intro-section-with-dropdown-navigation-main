@@ -29,3 +29,13 @@
       450px auto auto;
   }
 }
+
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template:
+      "main sidebar sidebar" auto
+      "main sidebar sidebar" auto
+      "footer sidebar sidebar" 100px /
+      450px 330px 330px;
+  }
+}
