@@ -6,6 +6,11 @@
   height: 135vh;
   @media screen and (min-width: 800px) {
     height: 115vh;
+    //min-height: 100vh;
+  }
+
+  @media screen and (min-width: 970px) {
+    height: 100%;
   }
 }
 
@@ -37,7 +42,7 @@
       "main sidebar sidebar" auto
       "main sidebar sidebar" auto
       "footer sidebar sidebar" 100px /
-      450px auto auto;
+      300px 380px 10px;
   }
 }
 

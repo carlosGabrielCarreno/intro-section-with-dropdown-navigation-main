@@ -11,6 +11,9 @@
       hsl(0, 0%, 98%) 30%
     );
   }
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
 }
 
 .wrapper {
