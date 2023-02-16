@@ -22,6 +22,12 @@ const DropdownProvider = ({ children }) => {
     };
   }, [windowSize]);
 
+  useEffect(() => {
+    if (windowSize.width >= 960) {
+      setShowMobileMenu(false);
+    }
+  }, [windowSize]);
+
   return (
     <DropdownContext.Provider
       value={{ showMobileMenu, setShowMobileMenu, windowSize }}
