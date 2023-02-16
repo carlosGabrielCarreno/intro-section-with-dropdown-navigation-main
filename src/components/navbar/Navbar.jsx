@@ -1,6 +1,8 @@
 //C:\Program Files\PostgreSQL\15
 import { useContext } from "react";
 import logo from "../../images/logo.svg";
+import menuOpen from "../../images/icon-menu.svg";
+import closeMenu from "../../images/icon-close-menu.svg";
 import "./_navbar.scss";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Navigation } from "./Navigation/Navigation";
@@ -28,7 +30,7 @@ export const Navbar = () => {
           className="mobileIcon"
           onClick={() => setShowMobileMenu(!showMobileMenu)}
         >
-          {showMobileMenu ? <FaTimes /> : <FaBars />}
+          {showMobileMenu ? <img src={closeMenu} /> : <img src={menuOpen} />}
         </div>
       </div>
       {showMobileMenu ? (

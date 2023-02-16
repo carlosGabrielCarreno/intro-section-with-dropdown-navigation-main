@@ -15,6 +15,7 @@
 
 .wrapper {
   width: 90%;
+  //border: solid gold;
   padding: 1rem 0;
   max-width: 1300px;
   height: 100%;
@@ -22,13 +23,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
+
   &.open {
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
 
 .logotipo {
-  width: 5rem;
+  //border: solid;
+  width: 4.9rem;
   height: 2rem;
 }
 

@@ -1,0 +1,16 @@
+.container-list-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0.6;
+  width: 50%;
+  @media screen and (min-width: 960px) {
+    //border: solid red;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0.1;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
