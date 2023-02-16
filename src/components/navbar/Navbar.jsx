@@ -13,7 +13,7 @@ export const Navbar = () => {
   return (
     <header
       id="header"
-      className={`container-header smooth-scroll ${getOpenClass(
+      className={`container-header ${getOpenClass(
         showMobileMenu && windowSize.width < 960
       )}`}
     >
