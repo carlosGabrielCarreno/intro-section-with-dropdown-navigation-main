@@ -20,7 +20,7 @@ const DropdownProvider = ({ children }) => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [windowSize]);
 
   return (
     <DropdownContext.Provider

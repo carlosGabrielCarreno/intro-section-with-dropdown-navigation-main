@@ -3,7 +3,10 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
   //border: solid red;
-  height: 105vh;
+  height: 135vh;
+  @media screen and (min-width: 800px) {
+    height: 115vh;
+  }
 }
 
 .grid-container {
