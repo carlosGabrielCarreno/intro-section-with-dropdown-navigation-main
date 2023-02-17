@@ -1,0 +1,9 @@
+.item-features {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item-features .label {
+  font-size: 12px;
+}
