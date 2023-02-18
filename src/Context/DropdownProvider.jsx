@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { DropdownContext } from "./DropdownContext";
 
 const DropdownProvider = ({ children }) => {
+  const [isMenuOpen1, setIsMenuOpen1] = useState(false);
+  const [isMenuOpen2, setIsMenuOpen2] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
@@ -30,7 +32,15 @@ const DropdownProvider = ({ children }) => {
 
   return (
     <DropdownContext.Provider
-      value={{ showMobileMenu, setShowMobileMenu, windowSize }}
+      value={{
+        showMobileMenu,
+        setShowMobileMenu,
+        windowSize,
+        isMenuOpen1,
+        setIsMenuOpen1,
+        isMenuOpen2,
+        setIsMenuOpen2,
+      }}
     >
       {children}
     </DropdownContext.Provider>
