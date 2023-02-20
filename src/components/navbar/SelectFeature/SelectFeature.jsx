@@ -14,6 +14,36 @@ const options = [
 ];
 
 export const SelectFeature = () => {
+  const customStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      border: "none",
+      boxShadow: "none",
+      backgroundColor: "hsl(0, 0%, 98%)",
+      "&:hover": {
+        borderColor: "transparent",
+      },
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      cursor: "pointer",
+      display: "flex",
+      justifyContent: "space-between",
+      fontSize: 10,
+      margin: 0,
+    }),
+    singleValue: (provided, state) => ({
+      ...provided,
+      color: state.isSelected ? "white" : "black",
+    }),
+    indicatorSeparator: () => ({ display: "none" }),
+    dropdownIndicator: (provided, state) => ({
+      ...provided,
+      transition: "transform 0.3s ease",
+      transform: state.selectProps.menuIsOpen ? "rotate(180deg)" : null,
+    }),
+  };
+
   return (
     <Select
       id="feature-select"
@@ -21,11 +51,17 @@ export const SelectFeature = () => {
       options={options}
       placeholder="Features"
       formatOptionLabel={({ label, icon }) => (
-        <div className="item-features">
+        <div
+          style={{
+            display: "flex",
+            flexFlow: 1,
+          }}
+          className="item-features"
+        >
           <img
             src={icon}
             alt={`${label} icon`}
-            style={{ width: 8, marginRight: 2 }}
+            style={{ width: 15, marginRight: 1 }}
           />
           <div className="label">{label}</div>
         </div>
@@ -34,31 +70,4 @@ export const SelectFeature = () => {
       styles={customStyles}
     />
   );
-};
-
-const customStyles = {
-  control: (provided, state) => ({
-    ...provided,
-    border: "none",
-    boxShadow: "none",
-    "&:hover": {
-      borderColor: "transparent",
-    },
-  }),
-  option: (provided, state) => ({
-    ...provided,
-    cursor: "pointer",
-    display: "flex",
-    justifyContent: "space-between",
-    fontSize: 10,
-    margin: 0,
-  }),
-  singleValue: (provided, state) => ({
-    ...provided,
-    color: state.isSelected ? "white" : "black",
-  }),
-  indicatorSeparator: () => ({ display: "none" }),
-  dropdownIndicator: () => ({
-    display: "none",
-  }),
 };
