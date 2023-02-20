@@ -29,7 +29,8 @@ export const SelectFeature = () => {
       cursor: "pointer",
       display: "flex",
       justifyContent: "space-between",
-      fontSize: 10,
+      alignItems: "center",
+      fontSize: 14,
       margin: 0,
     }),
     singleValue: (provided, state) => ({
@@ -61,7 +62,7 @@ export const SelectFeature = () => {
           <img
             src={icon}
             alt={`${label} icon`}
-            style={{ width: 15, marginRight: 1 }}
+            style={{ width: 15, marginRight: 10 }}
           />
           <div className="label">{label}</div>
         </div>

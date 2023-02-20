@@ -7,9 +7,9 @@ export const Navigation = ({ nameClass }) => {
     <>
       <nav className={nameClass}>
         <ul>
-          <SelectFeature />
-          <CompanySelected />
           <div className="container-list-navigation">
+            <SelectFeature />
+            <CompanySelected />
             <div className="carrers">Carrers</div>
             <div className="about">About</div>
           </div>

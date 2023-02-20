@@ -21,8 +21,8 @@ export const CompanySelected = () => {
       ...provided,
       cursor: "pointer",
       display: "flex",
-      justifyContent: "space-between",
-      fontSize: 10,
+      justifyContent: "center",
+      fontSize: 14,
       margin: 0,
     }),
     singleValue: (provided, state) => ({
@@ -34,6 +34,10 @@ export const CompanySelected = () => {
       ...provided,
       transition: "transform 0.3s ease",
       transform: state.selectProps.menuIsOpen ? "rotate(180deg)" : null,
+      color: "hsl(0, 0%, 41%)",
+      "&:hover": {
+        color: "hsl(0, 0%, 8%)",
+      },
     }),
   };
 
