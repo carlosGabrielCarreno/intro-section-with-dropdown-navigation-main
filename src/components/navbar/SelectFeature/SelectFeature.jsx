@@ -20,6 +20,8 @@ export const SelectFeature = () => {
       border: "none",
       boxShadow: "none",
       backgroundColor: "hsl(0, 0%, 98%)",
+      width: "8rem",
+      //border: "solid",
       "&:hover": {
         borderColor: "transparent",
       },
@@ -30,7 +32,7 @@ export const SelectFeature = () => {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
-      fontSize: 14,
+      fontSize: 12,
       margin: 0,
     }),
     singleValue: (provided, state) => ({
