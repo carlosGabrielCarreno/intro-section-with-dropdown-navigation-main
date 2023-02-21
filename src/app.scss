@@ -28,6 +28,7 @@
 
 @media (min-width: 800px) {
   .grid-container {
+    /*border: solid purple;*/
     grid-template:
       "main sidebar" auto
       "main sidebar" auto
@@ -42,7 +43,7 @@
       "main sidebar sidebar" auto
       "main sidebar sidebar" auto
       "footer sidebar sidebar" 100px /
-      300px 380px 10px;
+      300px 380px 250px;
   }
 }
 

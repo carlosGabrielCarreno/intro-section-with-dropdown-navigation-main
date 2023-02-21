@@ -61,12 +61,13 @@ export const SelectFeature = () => {
           }}
           className="item-features"
         >
+          <div className="label">{label}</div>
+
           <img
             src={icon}
             alt={`${label} icon`}
-            style={{ width: 15, marginRight: 10 }}
+            style={{ width: 15, marginLeft: 22 }}
           />
-          <div className="label">{label}</div>
         </div>
       )}
       isSearchable={false}
