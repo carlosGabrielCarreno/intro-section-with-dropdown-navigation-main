@@ -5,8 +5,7 @@ import { DropdownContext } from "./Context/DropdownProvider";
 import "./app.scss";
 
 function App() {
-  const { showMobileMenu, setShowMobileMenu, windowSize } =
-    useContext(DropdownContext);
+  const { showMobileMenu, windowSize } = useContext(DropdownContext);
 
   return (
     <div
