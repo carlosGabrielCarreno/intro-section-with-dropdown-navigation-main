@@ -49,7 +49,6 @@ export const SelectFeature = () => {
 
   return (
     <Select
-      id="feature-select"
       classNamePrefix="itemFeatures"
       options={options}
       placeholder="Features"

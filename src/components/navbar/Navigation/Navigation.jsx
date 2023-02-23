@@ -6,7 +6,7 @@ export const Navigation = ({ nameClass }) => {
   return (
     <>
       <nav className={nameClass}>
-        <ul>
+        <div>
           <div className="container-list-navigation">
             <SelectFeature />
             <CompanySelected />
@@ -17,7 +17,7 @@ export const Navigation = ({ nameClass }) => {
             <button className="login">Login</button>
             <button className="register">Register</button>
           </div>
-        </ul>
+        </div>
       </nav>
     </>
   );

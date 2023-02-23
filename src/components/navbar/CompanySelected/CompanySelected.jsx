@@ -44,7 +44,6 @@ export const CompanySelected = () => {
 
   return (
     <Select
-      id="feature-select"
       classNamePrefix="itemFeatures"
       options={options}
       placeholder="Company"
